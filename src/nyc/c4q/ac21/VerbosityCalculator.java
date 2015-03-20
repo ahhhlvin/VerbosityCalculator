@@ -10,12 +10,13 @@ import java.util.Scanner;
 public class VerbosityCalculator {
     public static void main(String[] args) {
 
-        File TheProjectGutenberg = new File("/Users/alvin2/desktop/accesscode/VerbosityCalculator/resources/TheProjectGutenberg.rtf");
-        File ATaleofTwoCities = new File("/Users/alvin2/desktop/accesscode/VerbosityCalculator/resources/ATaleOfTwoCities.rtf");
+        File MobyDick = new File("/Users/alvin2/desktop/accesscode/VerbosityCalculator/resources/MobyDick.txt");
+        File ATaleofTwoCities = new File("/Users/alvin2/desktop/accesscode/VerbosityCalculator/resources/ATaleOfTwoCities.txt");
 
         System.out.println("The Project Gutenberg -- ");
-        verbCalculator(TheProjectGutenberg);
+        verbCalculator(MobyDick);
 
+        System.out.println();
 
         System.out.println("A Tale of Two Cities -- ");
         verbCalculator(ATaleofTwoCities);
@@ -41,7 +42,7 @@ public class VerbosityCalculator {
             while (sc.hasNext()) {
                 textFile = sc.next();
 
-                words ++;
+                words++;
 
                 if ((textFile.equals("Dr.")) || (textFile.equals("Ms.")) || (textFile.equals("Mrs.")) || (textFile.equals("Mr."))) {
                     continue;
@@ -50,15 +51,14 @@ public class VerbosityCalculator {
                 }
 
 
-                verbosity = words/(double)sentences;
 
-                
-                System.out.println(verbosity);
 
 
             }
 
+            verbosity = words/(double)sentences;
 
+            System.out.println("Sentences: " + (sentences) + "\n Words: " + (words) + "\n Verbosity = " + (verbosity));
 
 
         }
