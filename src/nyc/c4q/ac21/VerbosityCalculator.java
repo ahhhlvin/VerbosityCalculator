@@ -31,7 +31,7 @@ public class VerbosityCalculator {
         File text = new File("PATH to text file");
 
         try{
-            Scanner sc = new Scanner(file);
+            Scanner input = new Scanner(file);
 
             String textFile;
             int words = 0;
@@ -39,8 +39,8 @@ public class VerbosityCalculator {
             double verbosity;
 
 
-            while (sc.hasNext()) {
-                textFile = sc.next();
+            while (input.hasNext()) {
+                textFile = input.next();
 
                 words++;
 
@@ -58,7 +58,7 @@ public class VerbosityCalculator {
 
             verbosity = words/(double)sentences;
 
-            System.out.println("Sentences: " + (sentences) + "\n Words: " + (words) + "\n Verbosity = " + (verbosity));
+            System.out.println("Sentences: " + (sentences) + "\nWords: " + (words) + "\nVerbosity = " + (verbosity));
 
 
         }
