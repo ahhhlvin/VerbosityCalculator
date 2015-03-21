@@ -13,12 +13,12 @@ public class VerbosityCalculator {
         File MobyDick = new File("/Users/alvin2/desktop/accesscode/VerbosityCalculator/resources/MobyDick.txt");
         File ATaleofTwoCities = new File("/Users/alvin2/desktop/accesscode/VerbosityCalculator/resources/ATaleOfTwoCities.txt");
 
-        System.out.println("The Project Gutenberg -- ");
+        System.out.println("-- The Project Gutenberg -- ");
         verbCalculator(MobyDick);
 
         System.out.println();
 
-        System.out.println("A Tale of Two Cities -- ");
+        System.out.println("-- A Tale of Two Cities -- ");
         verbCalculator(ATaleofTwoCities);
 
 
