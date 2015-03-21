@@ -56,7 +56,7 @@ public class VerbosityCalculator {
 
             }
 
-            verbosity = words/(double)sentences;
+            verbosity = words/((double)sentences);
 
             System.out.println("Sentences: " + (sentences) + "\nWords: " + (words) + "\nVerbosity = " + (verbosity));
 
